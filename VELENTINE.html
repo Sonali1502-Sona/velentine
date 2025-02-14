@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day Card</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: linear-gradient(to bottom, #e57373, #f48fb1);
+            margin: 0;
+            font-family: 'Pacifico', cursive;
+        }
+        .emoji {
+            top: 8px;
+  position: absolute;
+  font-size: 3rem;
+  opacity: 0;
+  animation: floatEmojis 6s ease-in-out infinite;
+}
+
+@keyframes floatEmojis {
+  0% {
+    transform: translateY(100px);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-100px) rotate(20deg);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(100px);
+    opacity: 1;
+  }
+}
+
+/* Add random timing for each emoji */
+.emoji:nth-child(1) {
+  animation-delay: 0s;
+  left: 2%%;
+}
+.emoji:nth-child(2) {
+  animation-delay: 0.8s;
+  left: 5%;
+}
+.emoji:nth-child(3) {
+  animation-delay: 1.2s;
+  left: 10%;
+}
+.emoji:nth-child(4) {
+  animation-delay: 2s;
+  left: 15%;
+}
+.emoji:nth-child(5) {
+  animation-delay: 2.2s;
+  left:20 %;
+}
+.emoji:nth-child(6) {
+  animation-delay: 2.8s;
+  left: 30%;
+}
+.emoji:nth-child(8) {
+  animation-delay: 0s;
+  left: 40%;
+}
+.emoji:nth-child(9) {
+  animation-delay: 0.8s;
+  left: 50%;
+}
+.emoji:nth-child(10) {
+  animation-delay: 1.2s;
+  left: 60%;
+}
+.emoji:nth-child(11) {
+  animation-delay: 2s;
+  left: 70%;
+}
+.emoji:nth-child(12) {
+  animation-delay: 2.2s;
+  left: 80%;
+}
+.emoji:nth-child(13) {
+  animation-delay: 2.8s;
+  left: 86%;
+}
+.emoji:nth-child(14) {
+  animation-delay: 3.4s;
+  left:90 %;
+}
+.emoji:nth-child(15) {
+  animation-delay: 4.2s;
+  left: 95%;
+}
+.emoji:nth-child(16) {
+  animation-delay: 4.8s;
+  left: 98%;
+}
+
+
+
+        .card {
+            height: 550px;
+            width: 90%;
+            max-width: 600px;
+            background: linear-gradient(120deg, #ff9a9e, #fad0c4, #fbc2eb);
+            border-radius: 30px;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+            padding: 40px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            justify-content: space-between;
+            text-align: center;
+            padding-bottom: 30px; /* Space for the button */
+        }
+
+        .text {
+            font-size: 50px;
+            color: #8b0a50;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: top;
+            flex-grow: 1;
+        }
+
+        .image-container img {
+            
+            width: 350px;
+            height: 350px;
+            border-radius: 60%;
+            object-fit: cover;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .join-btn {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 12px 24px;
+            background: linear-gradient(45deg, #9c88b1, #dc5d5d);
+            color: #0c0102;
+            font-size: 18px;
+            font-weight: bold;
+            border: ;
+            box-shadow: 0 4px 15px rgba(17, 3, 4, 0.4);
+            border-radius: 20px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .join-btn::before {
+    content: "💖"; /* Heart emoji */
+    font-size: 20px;
+}
+.join-btn:hover {
+    background: linear-gradient(45deg, #ff4b2b, #ff416c);
+    transform: translateX(-50%) scale(1.1);
+    box-shadow: 0 6px 20px rgba(255, 71, 86, 0.6);
+}
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="text">Happy Valentine's Day!</div>
+        <div class="image-container">
+            <img src="https://images.unsplash.com/photo-1565883024419-08511e323216?w=800&auto=format&fit=crop&q=60" alt="Valentine Image">
+        </div>
+        <button class="join-btn">Unlock the Love </button>
+        
+    </div>
+    <div class="emoji">❤️‍🔥</div>
+    <div class="emoji">🫶🏻</div>
+    <div class="emoji">❤️</div>
+    <div class="emoji">😘</div>
+    <div class="emoji">👨‍❤️‍💋‍👨</div>
+    <div class="emoji">💓</div>
+    <div class="emoji">❤️‍🔥</div>
+    <div class="emoji">🫶🏻</div>
+    <div class="emoji">❤️</div>
+    <div class="emoji">😘</div>
+    <div class="emoji">👨‍❤️‍💋‍👨</div>
+    <div class="emoji">💓</div>
+    <div class="emoji">❣️</div>
+    <div class="emoji">💘</div>
+    <div class="emoji">💖</div>
+    <div class="emoji">💙</div>
+    <div class="emoji">💚</div>
+    <div class="emoji">🥰</div>
+    <div class="emoji">💗</div>
+</body>
+</html>
